@@ -140,10 +140,10 @@ header nav ul li svg {
 }
 
 .google-logo {
-  mask-image: url("/imgs/google_logo.svg");
+  mask-image: url("imgs/google_logo.svg");
   mask-repeat: no-repeat;
   mask-size: 100%;
-  -webkit-mask-image: url("/imgs/google_logo.svg");
+  -webkit-mask-image: url("imgs/google_logo.svg");
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
   background-color: var(--main-color);
@@ -165,7 +165,7 @@ header nav ul li svg {
   -o-border-radius: 50px;
 }
 .searchButton {
-  background-image: url("/imgs/icon_search.svg");
+  background-image: url("imgs/icon_search.svg");
   background-size: cover;
   background-position: center center;
   width: 20px;
@@ -173,7 +173,7 @@ header nav ul li svg {
   margin-left: 20px;
 }
 .voiceSearchButton {
-  background-image: url("/imgs/googlemic_clr_24px.svg");
+  background-image: url("imgs/googlemic_clr_24px.svg");
   background-size: cover;
   background-position: center center;
   width: 20px;
