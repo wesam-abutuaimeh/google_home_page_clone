@@ -1,0 +1,131 @@
+:root {
+  --main-bg-color: #353535;
+  --main-color: white;
+}
+* {
+  box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Cairo", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--main-bg-color);
+}
+.container {
+  margin: 0 auto;
+  padding: 0px 5px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* Start Header */
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 15px;
+}
+header nav ul li {
+  margin-right: 15px;
+}
+header nav ul .google-apps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.google-apps-menu {
+  position: absolute;
+  right: 27px;
+  width: 350px;
+  height: 380px;
+  overflow: auto;
+  background-color: #2d2e30;
+  padding: 10px;
+  border-radius: 11px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+}
+.google-apps-menu::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 11px;
+  -webkit-border-radius: 11px;
+  -moz-border-radius: 11px;
+  -ms-border-radius: 11px;
+  -o-border-radius: 11px;
+}
+.google-apps-menu::-webkit-scrollbar-thumb {
+  background-color: #5f6267;
+}
+.google-apps-menu.active {
+  display: flex;
+}
+.google-apps-menu div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 17px 10px;
+  border-radius: 6px;
+  background: #353535;
+  flex-basis: 30%;
+  margin: 5px;
+}
+.google-apps-menu div img {
+  width: 30px;
+}
+.google-apps-menu div img.profile-photo {
+  border-radius: 50%;
+}
+.google-apps-menu div span {
+  margin-top: 20px;
+  color: var(--main-color);
+}
+header nav ul .google-apps:hover {
+  background: #4a4a4a;
+}
+header nav ul li a {
+  color: var(--main-color);
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 500;
+}
+header nav ul li img {
+  width: fit-content;
+  display: inline-block;
+  border-radius: 50%;
+}
+header nav ul li svg {
+  width: 23px;
+  fill: #e5e5e5;
+  vertical-align: middle;
+}
