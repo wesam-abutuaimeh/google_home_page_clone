@@ -1,6 +1,20 @@
 :root {
-  --main-bg-color: #353535;
+  --main-bg-color: #202123;
   --main-color: white;
+  --svg-menu-color: #e5e5e5;
+  --border-color: #5f6368;
+  --hovered-search-engine-bg: #303134;
+  --hovered-search-engine-box-shadow: #171717;
+  --hovered-search-engine-border-color: #dfe1e500;
+}
+html[data-theme="light"] {
+  --main-bg-color: #ffffff;
+  --main-color: #000000de;
+  --svg-menu-color: #000;
+  --border-color: #dfe1e5;
+  --hovered-search-engine-bg: #ffffff;
+  --hovered-search-engine-box-shadow: #20212447;
+  --hovered-search-engine-border-color: #dfe1e500;
 }
 * {
   box-sizing: border-box;
@@ -113,6 +127,17 @@ header nav ul .google-apps {
 header nav ul .google-apps:hover {
   background: #4a4a4a;
 }
+#theme {
+  appearance: none;
+  border: none;
+  background-color: #20212447;
+  color: #dd00dd;
+  font-size: 16px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin: 20px 0;
+  cursor: pointer;
+}
 header nav ul li a {
   color: var(--main-color);
   text-transform: capitalize;
@@ -126,7 +151,7 @@ header nav ul li img {
 }
 header nav ul li svg {
   width: 23px;
-  fill: #e5e5e5;
+  fill: var(--svg-menu-color);
   vertical-align: middle;
 }
 .search-engine .container {
@@ -163,6 +188,16 @@ header nav ul li svg {
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
+  border: 1px solid var(--border-color);
+}
+.search-engine .container form > div:hover {
+  background-color: var(--hovered-search-engine-bg);
+  box-shadow: 0 1px 6px 0 var(--hovered-search-engine-box-shadow);
+  border-color: var(--hovered-search-engine-border-color);
+  color: white;
+}
+.search-engine .container form > div:hover input[type="search"] {
+  background-color: var(--hovered-search-engine-bg);
 }
 .searchButton {
   background-image: url("imgs/icon_search.svg");
@@ -184,6 +219,7 @@ header nav ul li svg {
 }
 input[type="search"] {
   width: 100%;
+  height: 100%;
   outline: none;
   border: none;
   padding-left: 15px;
