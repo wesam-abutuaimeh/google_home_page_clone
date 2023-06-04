@@ -8,17 +8,23 @@
   --hovered-search-engine-border-color: #dfe1e500;
   --footer-bg-color: #171717;
   --footer-link-colors: #999da2;
+  --btn-bg-color: #303134;
+  --btn-hover: #1717173d;
+  --btn-color: #e8eaed;
 }
 html[data-theme="light"] {
   --main-bg-color: #ffffff;
   --main-color: #000000de;
   --svg-menu-color: #000;
-  --border-color: #dfe1e5;
+  --border-color: #dadce0;
   --hovered-search-engine-bg: #ffffff;
   --hovered-search-engine-box-shadow: #20212447;
   --hovered-search-engine-border-color: #dfe1e500;
   --footer-bg-color: #f2f2f2;
   --footer-link-colors: #70757a;
+  --btn-bg-color: #f8f9fa;
+  --btn-hover: #1717173d;
+  --btn-color: #3c4043;
 }
 * {
   box-sizing: border-box;
@@ -230,41 +236,47 @@ input[type="search"] {
   padding-left: 15px;
   font-size: 16px;
 }
-.add-shortcut {
-  color: var(--main-color);
+.btns {
   margin-top: 16px;
   padding: 16px 20px;
   text-align: center;
   border-radius: 4px;
   cursor: pointer;
 }
-.add-shortcut:hover {
-  background: #ffffff1a;
+.btns button {
+  background-color: var(--btn-bg-color);
+  border: 1px solid #303134;
+  border-radius: 4px;
+  color: var(--btn-color);
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
 }
-.add-shortcut .icon {
-  background-color: #2a2a2a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-}
-.add-shortcut .icon img {
-  border-radius: 50%;
-  color: white;
-}
-.add-shortcut p {
-  font-weight: 400;
-  white-space: nowrap;
-  font-size: 13px;
-  margin-top: 16px;
+.btns button:hover {
+  box-shadow: 0 1px 3px var(--btn-hover);
+  border: 1px solid var(--border-color);
+  color: var(--btn-color);
 }
 @media (max-width: 600px) {
   .search-engine .container form > div {
     width: 350px;
   }
+}
+.in-ar {
+  color: #bdc1c6;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 28px;
+}
+.in-ar a {
+  color: #8ab4f8;
 }
 .location {
   padding: 15px;
