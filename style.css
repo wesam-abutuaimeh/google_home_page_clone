@@ -41,7 +41,6 @@ a {
   text-decoration: none;
 }
 body {
-  font-family: "Cairo", sans-serif;
   font-family: "Roboto", sans-serif;
   background-color: var(--main-bg-color);
 }
