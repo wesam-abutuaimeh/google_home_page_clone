@@ -44,25 +44,6 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--main-bg-color);
 }
-.container {
-  /* margin: 0 auto; */
-  padding: 0px 5px;
-}
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
 /* Start Header */
 header nav ul {
   display: flex;
@@ -168,11 +149,8 @@ header nav ul li svg {
   align-items: center;
   margin: 0 auto;
   justify-content: center;
-  /* height: calc(100vh - 75px); */
-  /* height: calc(100vh - 156px); */
   padding: 100px;
 }
-
 .google-logo {
   mask-image: url("imgs/google_logo.svg");
   mask-repeat: no-repeat;
@@ -184,7 +162,6 @@ header nav ul li svg {
   width: 270px;
   height: 128px;
 }
-
 .search-engine .container form > div {
   display: flex;
   align-items: center;
@@ -262,11 +239,7 @@ input[type="search"] {
   border: 1px solid var(--border-color);
   color: var(--btn-color);
 }
-@media (max-width: 600px) {
-  .search-engine .container form > div {
-    width: 350px;
-  }
-}
+
 .in-ar {
   color: #bdc1c6;
   display: inline-block;
@@ -301,6 +274,31 @@ footer .container div a {
 }
 footer .container div a:hover {
   text-decoration: underline;
+}
+
+/* MediaQuery */
+.container {
+  padding: 0px 5px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (max-width: 600px) {
+  .search-engine .container form > div {
+    width: 350px;
+  }
 }
 @media (max-width: 600px) {
   footer .container {
