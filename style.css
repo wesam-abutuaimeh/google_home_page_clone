@@ -74,7 +74,7 @@ header nav ul .google-apps {
   border-radius: 11px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   z-index: 1000;
   display: none;
 }
@@ -113,6 +113,9 @@ header nav ul .google-apps {
   margin-top: 20px;
   color: var(--main-color);
 }
+header {
+  position: relative;
+}
 header nav ul .google-apps:hover {
   background: #4a4a4a;
 }
@@ -124,7 +127,6 @@ header nav ul .google-apps:hover {
   font-size: 16px;
   padding: 4px 8px;
   border-radius: 6px;
-  margin: 20px 0;
   cursor: pointer;
 }
 header nav ul li a {
@@ -142,6 +144,8 @@ header nav ul li svg {
   width: 23px;
   fill: var(--svg-menu-color);
   vertical-align: middle;
+  align-items: stretch;
+  /* !here */
 }
 .search-engine .container {
   display: flex;
